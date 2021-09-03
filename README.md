@@ -5,7 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 Bootstrap 4
-@fortawesome/react-fontawesome
+react-fontawesome
+react-typed
+react-particles-js
+
 
 ### `npm start`
 

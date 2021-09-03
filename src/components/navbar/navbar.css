@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
 :root {
-    --primary-color: #40c1c5;
+    --primary-color: #05c0a1;
     --background-color: #f8f9fa;
     --black-color: black;
 }
@@ -11,6 +11,10 @@ body {
 }
 
 /******** NAVBAR ********/
+
+nav {
+    z-index: 2;
+}
 
 .logo {
     width: 16.25rem;

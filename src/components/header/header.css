@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+    --primary-color: #05c0a1;
+    --background-color: #f8f9fa;
+    --black-color: black;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/******** HEADER ********/
+
+.headerWrapper {
+    position: relative;
+    background: url(../images/banners4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.main-info {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-info h1 {
+    color: var(--background-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/******** TYPED TEXT ********/
+
+.typed-text {
+    font-size: 2rem;
+    color: var(--background-color);
+    text-transform: uppercase;
+}
+
+/******** HEADER MAIN OFFER BUTTON ********/
+
+.btn-main-offer {
+    border: 1px solid var(--black-color);
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color: var(--background-color);
+    text-decoration: none;
+    margin: 2rem;
+}
