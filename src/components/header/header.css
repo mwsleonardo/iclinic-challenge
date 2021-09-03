@@ -4,6 +4,7 @@
     --primary-color: #05c0a1;
     --background-color: #f8f9fa;
     --black-color: black;
+    --white-color: white;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 
 .headerWrapper {
     position: relative;
-    background: url(../images/banners4.jpg) no-repeat;
+    background: url(../images/wallpaper-background.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -32,18 +33,22 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 1;
 }
 
 .main-info h1 {
-    color: var(--background-color);
+    color: var(--white-color);
     text-transform: uppercase;
-    font-weight: 600;
+    margin-top: 5rem;
+    font-weight: 800;
+    letter-spacing: 0.8rem;
+    
 }
 
 /******** TYPED TEXT ********/
 
 .typed-text {
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--background-color);
     text-transform: uppercase;
 }
@@ -51,11 +56,20 @@ body {
 /******** HEADER MAIN OFFER BUTTON ********/
 
 .btn-main-offer {
-    border: 1px solid var(--black-color);
     text-transform: uppercase;
-    border-radius: 0;
+    border-radius: 10px 10px;
     padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-    color: var(--background-color);
+    color: var(--black-color);
     text-decoration: none;
+    font-size: 1.5rem;
     margin: 2rem;
+    transition: 0.3s;
+    background-color: var(--background-color);
+    
+}
+
+.btn-main-offer:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+    opacity: 1;
 }
