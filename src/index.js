@@ -6,9 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import Particles from 'react-particles-js'
 import './index.css'
 
+
 ReactDOM.render(
+  
   <React.StrictMode>
-    <Particles 
+    <Particles
+      className="particle-canvas" 
       params={{
         particles: {
           value: 30,
@@ -16,13 +19,21 @@ ReactDOM.render(
             enable: true,
             value_area: 900
           }
-        }
+        },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 6,
+              color: "#05c0a1"
+            }
+          },
       }}
     
     />
     <Form />
     <Header />
   </React.StrictMode>,
+  
   document.getElementById('root')
 );
 

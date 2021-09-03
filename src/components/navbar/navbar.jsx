@@ -10,7 +10,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-
+  <>
   <nav class="navbar navbar-expand-lg navbar-light bg-light"> {/* BACKGROUND DA NAVBAR */}
     
     <div className="container"> {/* CONTAINER JUSTIFY-CONTENTS */}
@@ -25,11 +25,11 @@ const Navbar = () => {
               <li className="nav-item active">  {/* LINK PARA HOMEPAGE */}
                 <a className="nav-link" href="#">Homepage<span className="sr-only"></span></a>
               </li>
-              <li className="nav-item"> {/* LINK PARA LISTAGEM DAS CLINICAS CADASTRADAS */}
-                <a className="nav-link" href="#">Rede credenciada</a>
-              </li>
               <li className="nav-item"> {/* LINK PARA INFORMAÇÕES SOBRE A EMPRESA */}
                 <a className="nav-link" href="#">Quem somos</a>
+              </li>
+              <li className="nav-item"> {/* LINK PARA LISTAGEM DAS CLINICAS CADASTRADAS */}
+                <a className="nav-link" href="#">Rede credenciada</a>
               </li>
               <li className="nav-item"> {/* LINK CADASTRO DE CLÍNICAS -> SOMENTE USUÁRIO, NECESSITA LOGIN */}
                 <a className="nav-link" href="#">Cadastro de Clínicas</a>
@@ -39,7 +39,7 @@ const Navbar = () => {
           </div>
     </div>
   </nav>
-
+  </>
   )
 }
 
