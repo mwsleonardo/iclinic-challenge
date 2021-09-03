@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Form from './components/form/form'
 import Header from './components/header/header'
+import About from './components/about/about'
 import reportWebVitals from './reportWebVitals';
 import Particles from 'react-particles-js'
 import './index.css'
@@ -32,6 +33,7 @@ ReactDOM.render(
     />
     <Form />
     <Header />
+    <About />
   </React.StrictMode>,
   
   document.getElementById('root')
