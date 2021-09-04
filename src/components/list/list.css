@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --primary-color: #05c0a1;
+    --background-color: #f8f9fa;
+    --black-color: black;
+    --white-color: white;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.list {
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-list {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+.map-list {
+    width: 100%;
+}
+
+
+.container-list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.container-list h1 {
+    color: white;
+    font-size: 40px;
+    margin-left: 183px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+thead th {
+    width: 100%;
+    background-color: #F1F1F1;
+    color: #65532F;
+    text-align: center;
+    padding: 54px 59px 22px 74px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+thead th:nth-child(1) {
+    text-align: left;
+    padding-left: 62px;
+}
+
+tbody {
+    background-color: white;
+    font-size: 24px;
+
+}
+
+tbody td {
+    padding: 21px 58px 21px 58px;
+    border-bottom: 3px solid #F1F1F1;
+}
+
+tbody td:nth-child(n+2) {
+    color: #05c0a1;
+}
+
+tbody td:nth-child(1) {
+    width: 80%;
+}
+
+.class-size {
+    width: 100%;
+}
+
+@media(max-width:900px) {
+    .header {
+        margin: 36px 9px 0px 9px;
+    }
+
+    .homeButton {
+        width: 106px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .homeButton img {
+        width: 12px;
+        height: auto;
+        margin-right: 5px;
+    }
+
+    .exitButton {
+        width: 104px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .exitButton img {
+        width: 12px;
+        height: auto;
+        margin-right: 5px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 9px;
+        margin-right: 9px;
+    }
+
+    .container h1 {
+        font-size: 33px;
+    }
+
+    
+    thead {
+        width: 100%;
+    }
+
+    thead th {
+        font-size: 17px;
+        padding: 21px 30px 21px 58px;
+    }
+
+    tbody {
+        font-size: 14px;
+        width: 100%;
+        
+    }
+
+
+    tbody td {
+        padding: 21px 16px 21px 58px;
+        border-bottom: 3px solid #F1F1F1;
+    }
+
+
+    tbody td:nth-child(1) {
+        width: 70%;
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "clinicas": [
+      {
+          "id": 1,
+          "Nome": "Clinica do Joãozinho",
+          "Cpf": "466.062.528-14",
+          "Capital": "3.000,00",
+          "Cep": "02122-090",
+          "Logradouro": "Rua Nova Prata",
+          "Numero": "148",
+          "Complemento": "Apto 01",
+          "Bairro": "Vila Maria Alta",
+          "Localidade": "São Paulo",
+          "UF": "SP"
+          
+      },
+      {
+          "id": 2,
+          "Nome": "Clinica do Joãozinho",
+          "Cpf": "466.062.528-14",
+          "Capital": "3.000,00",
+          "Cep": "02122-090",
+          "Logradouro": "Rua Nova Prata",
+          "Numero": "148",
+          "Complemento": "Apto 01",
+          "Bairro": "Vila Maria Alta",
+          "Localidade": "São Paulo",
+          "UF": "SP"
+          
+      }
+
+
+  ]
+
+}
