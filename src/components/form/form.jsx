@@ -1,7 +1,35 @@
 import React from "react"
+import reactDom from "react-dom"
 import './form.css'
+import { useForm } from 'react-hook-form'
+import axios from 'axios' 
+import cors from 'cors'
+
+
 
 const Form = () => {
+
+
+
+    function onBlurCep(ev) {
+        const {value} = ev.target;
+        if(value?.length !== 8) {
+            return;
+        }
+        fetch('https://cors.bridged.cc/https://viacep.com.br/ws/' + value + '/json/')
+            .then((res) => res.json())
+            .then((data) => console.log(data));
+            
+
+
+    }
+
+
+
+
+
+
+
     return (
         <div className="forms">
             <div className="text-center">
@@ -60,6 +88,7 @@ const Form = () => {
                         className="form-control"
                         placeholder="CEP"
                         cep="cep"
+                        onBlur={onBlurCep}
                         />
                         {/* ENDEREÇO -> LOGRADOURO */}
                         <input 
