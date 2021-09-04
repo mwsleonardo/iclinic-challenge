@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Form from './components/form/form'
+import Base from './components/base/base'
 import Header from './components/header/header'
 import About from './components/about/about'
 import List from './components/list/list'
@@ -32,7 +32,7 @@ ReactDOM.render(
       }}
     
     />
-    <Form />
+    <Base />
     <Header />
     <About />
     <List />  
