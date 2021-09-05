@@ -1,78 +1,93 @@
-# Getting Started with Create React App
+# inspirational-challenge - Leonardo (iClinic)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Vídeo privado da apresentação do projeto: [Apresentação](https://www.youtube.com/watch?v=N1Zw7YmHFMY).
 
-## Available Scripts
+Como solicitado, foi criada uma Landing Page para as clíncias de Michael,
+um formulário de cadastro de clínicas e sua listagem com get/post na mock api.
 
-Bootstrap 4
-react-fontawesome
-react-typed
-react-particles-js
-formik
-yup
-react-responsive-carousel
-react-share
-react-scroll
+Formulário com auto preenchimento após digitar CEP (Api viaCep).
+
+# App em execução
+
+Para rodar a aplicação e a API basta usar os comandos no terminal:
 
 ### `npm start`
+### `npm run server`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias, frameworks & bibliotecas aplicadas no projeto.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `React`
 
-### `npm test`
+• Bootstrap 4
+• react-fontawesome
+• react-typed
+• react-particles-js
+• formik
+• yup
+• react-responsive-carousel
+• react-share
+• react-scroll
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Experiência com o projeto
 
-### `npm run build`
+A experiência de desenvolver este projeto para o inspirational-challenge foi incrível,
+pois a prova meu conhecimento em vários momentos, tive a oportunidade de utilizar várias 
+tecnologias novas que com certeza agregarão muito ao meu conhecimento, como por exemplo o Bootstrap.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Trouxe a tona a necessidade de organização ao desenvolvimento, nos comentários e commits,
+e também no próprio tempo, para trazer a melhor produtividade possível no tempo engajado.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+E um aspecto muito importante é a avaliação profissional do projeto, isso nos traz
+a necessidade de ser sempre melhor, cada linha, cada código pode ser melhorado.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Futuro
 
-### `npm run eject`
+Em uma próxima versão do projeto, eu adicionaria a requisição de login para 
+editar e excluir os valores da tabela de clínicas, sem necessidade de realiza-lo direto no API.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+E alguns pontos visuais para as versões responsivas.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Estrutura dos arquivos
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
++--iClinic // 
+|
+     SRC //  
+|      index.js // 
+|      index.css //
+|      reportWebVitals.js //
+     Components //
+        schema.js
+|      about //
+|        about.jsx // 
+|        about.css //
+|      base //
+|        base.jsx // 
+|      footer //
+|        footer.jsx // 
+|        footer.css //
+|      form //
+|        form.jsx // 
+|        form.css //  
+|      header //
+|        header.jsx // 
+|        header.css // 
+|      images //
+|        logo.png // 
+|        myfoto.jpg //
+|        testimonials-bg.png //
+|        wallpaper-background.png //
+|           avatars //
+|               avatar1 //
+|               avatar2 //
+|               avatar3 //
+|               avatar4 //
+|      list //
+|        list.jsx // 
+|        list.css //
+|      navbar //
+|        navbar.jsx // 
+|        navbar.css //  
+|      testimonials //
+|        testimonials.jsx // 
+|        testimonials.css // 
+|        testimonialsCarousel.jsx // 
