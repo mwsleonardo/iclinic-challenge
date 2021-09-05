@@ -10,6 +10,8 @@ react-typed
 react-particles-js
 formik
 yup
+react-responsive-carousel
+
 
 ### `npm start`
 
