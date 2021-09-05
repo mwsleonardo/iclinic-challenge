@@ -1,35 +1,46 @@
 {
   "clinicas": [
-      {
-          "id": 1,
-          "Nome": "Clinica do Joãozinho",
-          "Cpf": "466.062.528-14",
-          "Capital": "3.000,00",
-          "Cep": "02122-090",
-          "Logradouro": "Rua Nova Prata",
-          "Numero": "148",
-          "Complemento": "Apto 01",
-          "Bairro": "Vila Maria Alta",
-          "Localidade": "São Paulo",
-          "UF": "SP"
-          
-      },
-      {
-          "id": 2,
-          "Nome": "Clinica do Joãozinho",
-          "Cpf": "466.062.528-14",
-          "Capital": "3.000,00",
-          "Cep": "02122-090",
-          "Logradouro": "Rua Nova Prata",
-          "Numero": "148",
-          "Complemento": "Apto 01",
-          "Bairro": "Vila Maria Alta",
-          "Localidade": "São Paulo",
-          "UF": "SP"
-          
-      }
-
-
+    {
+      "id": 1,
+      "nome": "123213",
+      "cpf": "321312312312312321321",
+      "email": "mwsleonardo@gmail.com",
+      "capital": "21321321321321",
+      "cep": "02122090",
+      "logradouro": "Rua Nova Prata",
+      "numero": "14",
+      "complemento": "1",
+      "bairro": "Vila Maria Alta",
+      "localidade": "São Paulo",
+      "uf": "SP"
+    },
+    {
+      "id": 2,
+      "nome": "123213",
+      "cpf": "321312312312312321321",
+      "email": "mwsleonardo@gmail.com",
+      "capital": "21321321321321",
+      "cep": "02122090",
+      "logradouro": "Rua Nova Prata",
+      "numero": "14",
+      "complemento": "1",
+      "bairro": "Vila Maria Alta",
+      "localidade": "São Paulo",
+      "uf": "SP"
+    },
+    {
+      "id": 3,
+      "nome": "123213",
+      "cpf": "321312312312312321321",
+      "email": "mwsleonardo@gmail.com",
+      "capital": "21321321321321",
+      "cep": "02122090",
+      "logradouro": "Rua Nova Prata",
+      "numero": "14",
+      "complemento": "1",
+      "bairro": "Vila Maria Alta",
+      "localidade": "São Paulo",
+      "uf": "SP"
+    }
   ]
-
 }

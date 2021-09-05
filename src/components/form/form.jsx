@@ -1,13 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import './form.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import Schema from '../schema'
-
 import axios from 'axios' 
 import cors from 'cors'
-
-
-
 
 const Formulario = () => {
 
@@ -31,14 +27,9 @@ const Formulario = () => {
 
 
 
-    function onSubmit( values, actions ) {
-        console.log('SUBMIT', values);
-    }
-
-
-
 
     return (
+
         <div className="forms">
             <div className="text-center">
                 <h1>Cadastre uma clínica</h1>
@@ -46,13 +37,12 @@ const Formulario = () => {
             </div>
             <Formik 
                 validationSchema={Schema}
-                onSubmit={onSubmit}
+                
                 initialValues= {{
                     nome: "",
                     cpf: '',
                     email: '',
                     capital: '',
-                    codigo: '',
                     cep: '',
                     logradouro: '',
                     numero: '',
@@ -61,7 +51,30 @@ const Formulario = () => {
                     localidade: '',
                     uf: '',
                 }}
+                onSubmit={async (values) => {
+                const data  = {
+                    nome: values.nome,
+                    cpf: values.cpf,
+                    email: values.email,
+                    capital: values.capital,
+                    cep: values.cep,
+                    logradouro: values.logradouro,
+                    numero: values.numero,
+                    complemento: values.complemento,
+                    bairro: values.bairro,
+                    localidade: values.localidade,
+                    uf: values.uf,         
+                };
+                
+                axios.post('http://localhost:5000/clinicas', data)
+                .then((response) => {
+                    alert("Cadastro realizado!")
+                    
+                });
+            
+            }}
 
+                
 
                 
                 render={({ values, setFieldValue }) => (
@@ -79,6 +92,7 @@ const Formulario = () => {
                             placeholder="Nome da clínica"
                             nome="nome"
                             value={values.nome}
+                            
         
                             />
 
@@ -91,6 +105,7 @@ const Formulario = () => {
                             placeholder="CPF do responsável"
                             cpf="cpf"
                             value={values.cpf}
+                            
                             />
 
                             <ErrorMessage name="cpf"/>
@@ -102,6 +117,7 @@ const Formulario = () => {
                             placeholder="E-mail do responsável"
                             email="email"
                             value={values.email}
+                            
                             />
 
                             <ErrorMessage name="email"/> 
@@ -113,6 +129,7 @@ const Formulario = () => {
                             placeholder="Capital social da Clínica"
                             capital="capital"
                             value={values.capital}
+                            
                             />
                             
                             <ErrorMessage name="capital"/>
@@ -130,6 +147,7 @@ const Formulario = () => {
                             value={values.cep}
                             onBlur={(ev) => onBlurCep(ev, setFieldValue)}
                             
+                            
                             />
                             
                             <Field 
@@ -139,6 +157,7 @@ const Formulario = () => {
                             placeholder="Logradouro"
                             logradouro="logradouro"
                             value={values.logradouro}
+                            
                             />
                             
                             <Field 
@@ -148,6 +167,7 @@ const Formulario = () => {
                             placeholder="Número"
                             numero="numero"
                             value={values.numero}
+                            
                             />
                             
                             <Field 
@@ -157,6 +177,7 @@ const Formulario = () => {
                             placeholder="Complemento"
                             complemento="complemento"
                             value={values.complemento}
+                            
                             />
                             
                             <Field 
@@ -166,6 +187,7 @@ const Formulario = () => {
                             placeholder="Bairro"
                             bairro="bairro"
                             value={values.bairro}
+                            
                             />
                             
                             <Field 
@@ -175,6 +197,7 @@ const Formulario = () => {
                             placeholder="Cidade"
                             localidade="localidade"
                             value={values.localidade}
+                            
                             />
                            
                             <Field 

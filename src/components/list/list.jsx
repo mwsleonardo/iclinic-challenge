@@ -10,6 +10,7 @@ const List = () => {
         axios.get('http://localhost:5000/clinicas')
         .then((response) => {
             setClinicas(response.data);
+            console.log(clinicas.data)
         });
 
     }, []);
@@ -36,10 +37,10 @@ const List = () => {
                     <table>
                         <tbody>
                             <tr>
-                                <td>{clinica.Nome}</td>
-                                <td>{clinica.Logradouro}</td>
-                                <td>{clinica.Numero}</td>
-                                <td>{clinica.Bairro}</td>
+                                <td>{clinica.nome}</td>
+                                <td>{clinica.logradouro}</td>
+                                <td>{clinica.numero}</td>
+                                <td>{clinica.bairro}</td>
                             </tr>    
                         </tbody>
                     </table>
