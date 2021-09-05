@@ -3,7 +3,7 @@
 Vídeo privado da apresentação do projeto: [Apresentação](https://www.youtube.com/watch?v=N1Zw7YmHFMY).
 
 Como solicitado, foi criada uma Landing Page para as clíncias de Michael,
-um formulário de cadastro de clínicas e sua listagem com get/post na mock api.
+um formulário de cadastro de clínicas e sua listagem com ambas com método get/post interagindo com a mock api.
 
 Formulário com auto preenchimento após digitar CEP (Api viaCep).
 
@@ -19,13 +19,21 @@ Para rodar a aplicação e a API basta usar os comandos no terminal:
 ### `React`
 
 • Bootstrap 4
+
 • react-fontawesome
+
 • react-typed
+
 • react-particles-js
+
 • formik
+
 • yup
+
 • react-responsive-carousel
+
 • react-share
+
 • react-scroll
 
 # Experiência com o projeto
@@ -50,10 +58,16 @@ E alguns pontos visuais para as versões responsivas.
 ## Estrutura dos arquivos
 
 +--iClinic // 
+
+
 |
      SRC //  
+
+
 |      index.js // 
 |      index.css //
+
+
 |      reportWebVitals.js //
      Components //
         schema.js
