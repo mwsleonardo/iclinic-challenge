@@ -2,6 +2,8 @@
 
 Vídeo privado da apresentação do projeto: [Apresentação](https://www.youtube.com/watch?v=N1Zw7YmHFMY).
 
+Repositório do projeto: [iClinic-Challange](https://github.com/mwsleonardo/iclinic-challenge).
+
 Como solicitado, foi criada uma Landing Page para as clíncias de Michael,
 um formulário de cadastro de clínicas e sua listagem com ambas com método get/post interagindo com a mock api.
 
