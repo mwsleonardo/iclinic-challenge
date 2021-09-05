@@ -56,18 +56,12 @@ editar e excluir os valores da tabela de clínicas, sem necessidade de realiza-l
 E alguns pontos visuais para as versões responsivas.
 
 ## Estrutura dos arquivos
-
+```` 
 +--iClinic // 
-
-
 |
      SRC //  
-
-
 |      index.js // 
 |      index.css //
-
-
 |      reportWebVitals.js //
      Components //
         schema.js
@@ -105,3 +99,4 @@ E alguns pontos visuais para as versões responsivas.
 |        testimonials.jsx // 
 |        testimonials.css // 
 |        testimonialsCarousel.jsx // 
+````
