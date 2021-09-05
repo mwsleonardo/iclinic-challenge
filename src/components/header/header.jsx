@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // IMPORT REACT TYPED
 import Typed from "react-typed"
 
-import Navbar from "../navbar/navbar"
 
 const Header = () => {
     return (

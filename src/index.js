@@ -36,8 +36,8 @@ ReactDOM.render(
     <Base />
     <Header />
     <About />
-    <List />  
     <Formulario />  
+    <List />  
   </React.StrictMode>,
   
   document.getElementById('root')

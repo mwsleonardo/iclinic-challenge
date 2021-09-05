@@ -1,19 +1,26 @@
 import React, { useState } from "react"
 import './form.css'
+
+// IMPORT DO FORMIK PARA CRIAÇÃO DO FORMULÁRIO E SUAS FUNÇÕES
 import { Formik, Form, Field, ErrorMessage } from 'formik'
+// IMPORT DO SCHEMA DE VALIDAÇÕES FEITOS COM YUP
 import Schema from '../schema'
+// IMPORT DO AXIOS PARA FAZER AS REQUISIÇÕES DE GET E POST NA MOCKY API
 import axios from 'axios' 
 import cors from 'cors'
 
 const Formulario = () => {
 
+    // FUNÇÃO PARA VALIDAR E SETAR O CEP CONFORME A API
     function onBlurCep(ev, setFieldValue) {
         const {value} = ev.target;
         const cep = value?.replace(/[^0-9]/g, '')
-        
+
         if(cep?.length !== 8) {
             return;
         }
+
+        // FUNÇÃO FETCH PARA BUSCAR E COMPLETAR OS DEMAIS CAMPOS CONFORME O CEP DIGITADO
         fetch('https://cors.bridged.cc/https://viacep.com.br/ws/' + cep + '/json/')
             .then((res) => res.json())
             .then((data) => {
@@ -26,18 +33,18 @@ const Formulario = () => {
     }
 
 
-
-
     return (
 
-        <div className="forms">
-            <div className="text-center">
+        <div className="forms"> {/* CONTAINER DA PÁGINA */}
+            <div className="text-center"> {/* TÍTULO DA PÁGINA */}
                 <h1>Cadastre uma clínica</h1>
                 <p>Lembrando que o cadastro está sujeito a análise, alteração ou remoção pelos nossos administradores.</p>
             </div>
+            {/* COMEÇO DO FORM FEITO COM FORMIK */}
             <Formik 
+                // VALIDAÇÃO CONFORME IMPORT DO SCHEMA (YUP)
                 validationSchema={Schema}
-                
+                // VALOR INICIAL DE TODOS CAMPOS
                 initialValues= {{
                     nome: "",
                     cpf: '',
@@ -51,6 +58,7 @@ const Formulario = () => {
                     localidade: '',
                     uf: '',
                 }}
+                // FUNÇÃO PARA BUSCAR E ENVIAR OS DADOS PREENCHIDOS PARA A MOCKY API
                 onSubmit={async (values) => {
                 const data  = {
                     nome: values.nome,
@@ -68,15 +76,15 @@ const Formulario = () => {
                 
                 axios.post('http://localhost:5000/clinicas', data)
                 .then((response) => {
-                    alert("Cadastro realizado!")
-                    
+                    alert("Cadastro realizado com sucesso!");
+                    window.location.reload()
                 });
             
             }}
 
                 
 
-                
+                // COMEÇO DA ESTRUTURA DO FORMULÁRIO
                 render={({ values, setFieldValue }) => (
                     
                     <Form> 
@@ -243,8 +251,8 @@ const Formulario = () => {
                             Cadastrar clínica
                             </button>
                             
-                    </div>
-                    </div>   
+                            </div>
+                        </div>   
                     </div>
                 </Form>    
 

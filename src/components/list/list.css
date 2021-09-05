@@ -12,7 +12,7 @@ body {
 }
 
 .list {
-    background-color: var(--background-color);
+    background-color: var(--white-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,9 +20,10 @@ body {
 }
 
 .about-list {
-    color: var(--primary-color);
+    color: var(--black-color);
     text-transform: uppercase;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .map-list {
@@ -31,10 +32,12 @@ body {
 
 
 .container-list {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     border-radius: 1rem;
     overflow: hidden;
+    border: var(--black-color) 1px solid;
+    margin-bottom: 3rem;
 }
 
 .container-list h1 {
@@ -51,17 +54,17 @@ table {
 
 thead th {
     width: 100%;
-    background-color: #F1F1F1;
-    color: #65532F;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     text-align: center;
-    padding: 54px 59px 22px 74px;
+    padding: 1.8rem 13rem 1rem 2rem;
     font-size: 28px;
     text-transform: uppercase;
 }
 
 thead th:nth-child(1) {
     text-align: left;
-    padding-left: 62px;
+    padding-left: 3.5rem;
 }
 
 tbody {
@@ -71,16 +74,21 @@ tbody {
 }
 
 tbody td {
-    padding: 21px 58px 21px 58px;
+    padding: 1.5rem 9rem 1.5rem 3.12rem;
     border-bottom: 3px solid #F1F1F1;
 }
 
 tbody td:nth-child(n+2) {
-    color: #05c0a1;
+    color: var(--black-color);
+    
+    
 }
 
 tbody td:nth-child(1) {
-    width: 80%;
+    width: 33%;
+    color: var(--black-color);
+    font-weight: 600;
+    
 }
 
 .class-size {
@@ -134,9 +142,11 @@ tbody td:nth-child(1) {
 
     thead th {
         font-size: 17px;
-        padding: 21px 30px 21px 58px;
+        padding: 0;
+        margin: 0;
     }
 
+    
     tbody {
         font-size: 14px;
         width: 100%;
@@ -153,4 +163,51 @@ tbody td:nth-child(1) {
     tbody td:nth-child(1) {
         width: 70%;
     }
+
+
+
+}
+
+
+@media(max-width: 1400px) {
+
+    thead th {
+        padding: 1rem 6rem 1rem 1rem;
+        font-size: 16px;
+    }
+    tbody td {
+        padding: 1rem 6rem 1rem 1rem;
+        font-size: 16px;
+    }
+
+
+}
+
+
+@media(max-width: 950px) {
+    thead th {
+        padding: 1rem 3rem 1rem 1rem;
+        font-size: 13px;
+    }
+    tbody td {
+        padding: 1rem 3rem 1rem 1rem;
+        font-size: 13px;
+    }
+
+
+}
+
+@media(max-width: 768px) {
+
+    .container-list {
+        width: 100%;
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    }
+
+    .about-list {
+        font-size: 18px;
+    }
+    
+
 }
