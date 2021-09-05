@@ -8,7 +8,8 @@ Bootstrap 4
 react-fontawesome
 react-typed
 react-particles-js
-react-hook-form
+formik
+yup
 
 ### `npm start`
 

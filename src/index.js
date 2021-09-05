@@ -4,7 +4,7 @@ import Base from './components/base/base'
 import Header from './components/header/header'
 import About from './components/about/about'
 import List from './components/list/list'
-import Form from './components/form/form'
+import Formulario from './components/form/form'
 import reportWebVitals from './reportWebVitals';
 import Particles from 'react-particles-js'
 import './index.css'
@@ -37,7 +37,7 @@ ReactDOM.render(
     <Header />
     <About />
     <List />  
-    <Form />  
+    <Formulario />  
   </React.StrictMode>,
   
   document.getElementById('root')

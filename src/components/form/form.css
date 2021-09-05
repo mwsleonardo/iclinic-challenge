@@ -50,6 +50,7 @@ body {
     outline: 0 !important;
     box-shadow: 0 !important;
     padding-left: 0 !important;
+    margin-top: 1rem;
 }
 
 .forms .container {
@@ -67,6 +68,10 @@ body {
     width: 100%;
     font-size: 2rem;
     background-color: var(--background-color);
+}
+
+#uf {
+    margin-top: 1.3rem;
 }
 
 
