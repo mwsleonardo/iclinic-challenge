@@ -79,3 +79,14 @@ body {
     margin: auto !important;
     margin-top: 3% !important;
   }
+
+  @media(max-width: 768px) {
+    .testimonials-content {
+      max-width: 19.125rem
+      
+    }
+    .container{
+      margin-left: 3px;
+    }
+
+  }

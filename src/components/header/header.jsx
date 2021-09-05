@@ -10,11 +10,11 @@ import Typed from "react-typed"
 const Header = () => {
     return (
         
-        <div className="headerWrapper"> {/* CONFIGURAÇÃO DO BACKGROUND */}
+        <div id="Home" className="headerWrapper"> {/* CONFIGURAÇÃO DO BACKGROUND */}
         
             <div className="main-info"> {/* TODAS INFORMAÇÕES CONTIDAS DENTRO DO HEADER */}
                 <h1>Sua vida sempre bela</h1> {/* TÍTULO CENTRALIZADO DO HEADER */}
-                <a href="" className="btn-main-offer">Agende sua consulta</a> {/* BOTÃO DE "OFERTA" PARA REDIRECIONAMENTO */}
+                <a href="https://api.whatsapp.com/send?phone=5511934497994&text=Gostaria%20de%20agendar%20uma%20consulta%20com%20o%20iClinic!" target="_blank" className="btn-main-offer">Agende sua consulta</a> {/* BOTÃO DE "OFERTA" PARA REDIRECIONAMENTO */}
                 <Typed 
                 className="typed-text"
                 strings={[ "Compromisso", "Respeito", "Humanização", "Comprometimento", "Ética profissional", "Responsabilidade" ]}

@@ -6,7 +6,8 @@ export default Yup.object().shape({
     cpf: Yup.number().min(11).required("Campo obrigatório!"),
     email: Yup.string().email().required("Campo obrigatório!"),
     capital: Yup.number().min(6).required("Campo obrigatório!"),
-    
+
+  
 
     
 });

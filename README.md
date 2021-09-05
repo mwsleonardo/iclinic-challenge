@@ -11,7 +11,8 @@ react-particles-js
 formik
 yup
 react-responsive-carousel
-
+react-share
+react-scroll
 
 ### `npm start`
 

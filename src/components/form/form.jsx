@@ -33,9 +33,10 @@ const Formulario = () => {
     }
 
 
+
     return (
 
-        <div className="forms"> {/* CONTAINER DA PÁGINA */}
+        <div id="Form" className="forms"> {/* CONTAINER DA PÁGINA */}
             <div className="text-center"> {/* TÍTULO DA PÁGINA */}
                 <h1>Cadastre uma clínica</h1>
                 <p>Lembrando que o cadastro está sujeito a análise, alteração ou remoção pelos nossos administradores.</p>
@@ -137,7 +138,7 @@ const Formulario = () => {
                             placeholder="Capital social da Clínica"
                             capital="capital"
                             value={values.capital}
-                            
+                                                        
                             />
                             
                             <ErrorMessage name="capital"/>
@@ -154,8 +155,7 @@ const Formulario = () => {
                             cep="cep"
                             value={values.cep}
                             onBlur={(ev) => onBlurCep(ev, setFieldValue)}
-                            
-                            
+    
                             />
                             
                             <Field 

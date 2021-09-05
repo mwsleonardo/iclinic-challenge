@@ -5,8 +5,8 @@ import "./testimonials.css"
 const Testimonials = () => {
     return (
         <div className="testimonials"> 
-            <h1>Nossos clientes</h1>
-            <div className="container">
+            <h1>Clientes Satisfeitos</h1>
+            <div id="testimonials-container" className="container">
                 <div className="testimonials-content">
                     <TestimonialsCarousel />
                 </div>

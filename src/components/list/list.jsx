@@ -19,7 +19,7 @@ const List = () => {
 
 
     return (
-    <div className="list">
+    <div id="List" className="list">
         {/* HEADER E TÍTULOS DA LISTAGEM DE CLÍNICAS */}
         <h1 className="about-list">CONHEÇA NOSSAS CLÍNICAS E PARCEIRAS</h1>
         <div className="class-size">
